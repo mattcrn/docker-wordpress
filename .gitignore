@@ -1,0 +1,5 @@
+/plugins
+/themes/*
+!/themes/sage-test
+/vendor
+/uploads/cache

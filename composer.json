@@ -1,0 +1,30 @@
+{
+    "name": "mattrn/docker-wordpress",
+    "description": "Manages plugins and themes for wordpress via composer.",
+    "authors": [
+      {
+        "name": "Matthias Frank"
+      }
+    ],
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://wpackagist.org"
+      }
+    ],
+    "extra": {
+      "installer-paths": {
+        "plugins/{$name}/": [
+          "type:wordpress-plugin"
+        ],
+        "themes/{$name}/": [
+          "type:wordpress-theme"
+        ]
+      }
+    },
+    "minimum-stability": "stable",
+    "require": {
+      "wpackagist-plugin/wordpress-seo": "*",
+      "wpackagist-plugin/advanced-custom-fields": "5.7.*"
+    }
+  }
